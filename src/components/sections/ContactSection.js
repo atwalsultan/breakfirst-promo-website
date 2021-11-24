@@ -1,36 +1,89 @@
+import React, { useState } from "react";
 const ContactSection = () => {
-    return (
-        <div className="contact-section">
-            <h2>Contact Us</h2>
-            
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-            <form className="contact-form">
-                <div className="first-row">
-                    <div className="label-input">
-                        <label htmlFor="firstName">First name</label>
-                        <input id="firstName"></input>
-                    </div>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = { firstName, lastName, email, message };
+    fetch("http://localhost:8080/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then(() => {
+        console.log("data submitted");
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
 
-                    <div className="label-input">
-                        <label htmlFor="lastName">Last name</label>
-                        <input id="lastName"></input>
-                    </div>
-                </div>
+  return (
+    <div className="contact-section">
+      <h2>Contact Us</h2>
 
-                <div className="label-input">
-                    <label htmlFor="email">Email</label>
-                    <input id="email"></input>
-                </div>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="first-row">
+          <div className="label-input">
+            <label htmlFor="firstName">First name</label>
+            <input
+              type="text"
+              id="firstName"
+              required
+              value={firstName}
+              onChange={(e) => {
+                setFirstName(e.target.value);
+              }}
+            />
+          </div>
 
-                <div className="label-input">
-                    <label htmlFor="message">Message</label>
-                    <textarea id="message"></textarea>
-                </div>
-
-                <div className="button">Submit</div>
-            </form>
+          <div className="label-input">
+            <label htmlFor="lastName">Last name</label>
+            <input
+              type="text"
+              id="lastName"
+              required
+              value={lastName}
+              onChange={(e) => {
+                setLastName(e.target.value);
+              }}
+            />
+          </div>
         </div>
-    )
-}
 
-export default ContactSection
+        <div className="label-input">
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            required
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+        </div>
+
+        <div className="label-input">
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+          />
+        </div>
+
+        <div className="button" onClick={handleSubmit}>
+          Submit
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default ContactSection;
