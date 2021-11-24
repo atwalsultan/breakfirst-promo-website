@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header.site-header {
+  padding: 40px 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header.site-header img {
+  max-height: 65px;
+  width: auto;
+}
+
+header.site-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+  list-style-type: none;
+}
+
+header.site-header ul li {
+  font-size: 32px;
+}
+
+div.banner-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.banner-1 div h1 {
+  max-width: 650px;
+  padding-top: 180px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+div.banner-1 div img {
+  max-width: 500px;
+  height: auto;
+}
+
+div.banner-1 div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 64px;
+}
+
+div.banner-1 div div.button {
+  background: #f94144;
+  padding: 24px 16px;
+  border-radius: 40px;
+  font-size: 32px;
+  text-align: center;
+  width: 290px;
+  color: #ffffff;
+}
+
+div.banner-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.banner-2 div h2 {
+  max-width: 650px;
+  padding-top: 180px;
+  font-size: 45px;
+  font-weight: 600;
+  color: "#355C97";
+}
+
+div.banner-2 div img {
+  max-width: 500px;
+  height: auto;
+}
+
+div.banner-2 div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 64px;
+}
+
+div.features-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 88px;
+  padding: 115px 120px;
+  background: #142339;
+}
+
+div.features-section .feature-card {
+  padding: 48px 24px 32px 24px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 4px;
+}
+
+div.features-section .feature-card h3 {
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 60px;
+  line-height: 32px;
+  color: #142339;
+}
+
+div.features-section .feature-card p {
+  font-size: 24px;
+  color: rgba(20, 35, 57, 0.6);
+  line-height: 42px;
+}
+
+div.facts-section {
+  padding: 115px 120px;
+  background: #fff6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 32px;
+}
+
+div.facts-section h2 {
+  font-size: 45px;
+}
+
+div.facts-section div.facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 88px;
+}
+
+div.facts-section div.facts div.fact-card {
+  background: #ffffff;
+  padding: 48px 24px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 4px;
+}
+
+div.facts-section div.facts div.fact-card h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #142339;
+  margin-bottom: 32px;
+  margin-top: 60px;
+}
+
+div.facts-section div.facts div.fact-card p {
+  font-size: 24px;
+  color: #142339;
+  line-height: 42px;
+}
+
+div.team-section {
+  padding: 160px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 32px;
+}
+
+div.team-section h2 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+div.team-section > p {
+  font-size: 30px;
+  line-height: 42px;
+  max-width: 925px;
+}
+
+div.team-section div.team-members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 88px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 42px;
+}
+
+div.team-section div.team-members div.member-card {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+div.team-section div.team-members div.member-card h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+div.team-section div.team-members div.member-card p {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+div.contact-section {
+  padding: 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 32px;
+}
+
+div.contact-section input {
+  height: 64px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+div.contact-section label {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+div.contact-section textarea {
+  height: 250px;
+  resize: none;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+div.contact-section h2 {
+  font-size: 45px;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+div.contact-section form.contact-form {
+  padding: 40px 250px;
+  background: #f1f3f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 32px;
+}
+
+div.contact-section form.contact-form div.first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 20px;
+}
+
+div.contact-section form.contact-form div.first-row > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+div.contact-section form.contact-form div.label-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 8px;
+}
+
+div.contact-section form.contact-form div.button {
+  background: #355c97;
+  padding: 24px 16px;
+  border-radius: 40px;
+  font-size: 32px;
+  text-align: center;
+  width: 290px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+footer.site-footer {
+  margin-top: 160px;
+  margin-bottom: 75px;
+}
+
+footer.site-footer p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/*# sourceMappingURL=App.css.map */
