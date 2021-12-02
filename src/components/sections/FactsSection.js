@@ -1,21 +1,24 @@
-import FactCard from '../cards/FactCard'
+import FactCard from '../cards/FactCard';
+import AlertIcon from '../../static/alert-1.svg';
+import MedicineIcon from '../../static/medicine-1.svg';
+import DementiaIcon from '../../static/dementia-1.svg';
 
 const FactsSection = () => {
     const facts = [
         {
             factHeading: "Cause of Mortality",
             factDescription: "Sedentary lifestyles increase all causes of mortality, while moving just 2 minutes every hour can decrease the risk by up to 33%.",
-            // factIcon: 
+            factIcon: AlertIcon
         },
         {
             factHeading: "Sitting Disease",
             factDescription: "An increased BMI due to a sedentary lifestyle can lead to decreased productivity and increased absenteeism from necessary activities like work.",
-            // factIcon: 
+            factIcon: MedicineIcon
         },
         {
             factHeading: "Mental Impact",
             factDescription: "A sedentary lifestyle have a negative impact on mental well-being. Its combination with the physical impact to health makes sedentary lifestyle problematic.",
-            // factIcon: 
+            factIcon: DementiaIcon
         }
     ]
 
