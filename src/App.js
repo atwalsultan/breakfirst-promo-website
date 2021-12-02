@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import "./App.scss";
 import Banner1 from "./components/banners/Banner1";
 import Footer from "./components/footer/Footer";
@@ -9,15 +11,19 @@ import TeamSection from "./components/sections/TeamSection";
 import Details from "./components/sections/Details";
 
 function App() {
+  const featuresRef = useRef(null);
+  const teamRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <div className="App">
-      <Header />
+      <Header featuresRef={ featuresRef } teamRef={ teamRef } contactRef={ contactRef } />
       <Banner1 />
-      <FeaturesSection />
+      <FeaturesSection featuresRef={ featuresRef } />
       <Details />
       <FactsSection />
-      <TeamSection />
-      <ContactSection />
+      <TeamSection teamRef={ teamRef } />
+      <ContactSection contactRef={ contactRef } />
       <Footer />
     </div>
   );

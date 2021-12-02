@@ -1,56 +1,45 @@
-import BannerImage from "../../static/hero_image.png";
+import NewTaskImage from "../../static/newtask-1.svg";
+import LeaderboardImage from "../../static/leaderboard-1.svg";
+import LibraryImage from "../../static/library.gif";
 
 const Banner1 = () => {
-  return (
-    <>
-      <div className="banner-2">
-        <div>
-          <h2>
-            You can customize task schedules and set the length of interval you
-            want
-          </h2>
-          <div className="center">
-            Set up your work schedule, and let us
-            <br /> help you take care of your health.
-          </div>
-        </div>
+	return (
+		<div className="feature-details-section">
+			<div className="banner-2">
+				<div>
+					<h2>You can customize task schedules and set the length of interval you want</h2>
+					<p>Set up your work schedule, and let us help you take care of your health.</p>
+				</div>
 
-        <div>
-          <img src={BannerImage} alt="" />
-        </div>
-      </div>
+				<div>
+					<img src={NewTaskImage} alt="" />
+				</div>
+			</div>
 
-      <div className="banner-2 reverse">
-        <div>
-          <h2>Your motion can be detected when you are doing the exercise</h2>
-          <div>
-            Set up your work schedule, and let us
-            <br /> help you take care of your health.
-          </div>
-        </div>
+			<div className="banner-2 reverse">
+				<div>
+					<h2>Your motion can be detected when you are doing the exercise</h2>
+					<p>Set up your work schedule, and let us help you take care of your health.</p>
+				</div>
 
-        <div>
-          <img src={BannerImage} alt="" />
-        </div>
-      </div>
+				<div>
+					<img src={LibraryImage} alt="" />
+				</div>
+			</div>
 
-      <div className="banner-2">
-        <div>
-          <h2>
-            Compete with your friends and co-workers on the group leaderboard
-          </h2>
-          <div className="center">
-            Set up your work schedule, and let us
-            <br /> help you take care of your health.
-          </div>
-        </div>
+			<div className="banner-2">
+				<div>
+					<h2>Compete with your friends and co-workers on the group leaderboard</h2>
 
-        <div>
-          <img src={BannerImage} alt="" />
-        </div>
-      </div>
-    </>
-  );
+					<p>Set up your work schedule, and let us help you take care of your health.</p>
+				</div>
+
+				<div>
+					<img src={LeaderboardImage} alt="" />
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Banner1;

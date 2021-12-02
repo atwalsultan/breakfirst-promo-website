@@ -3,7 +3,7 @@ import ExerciseIcon from '../../static/exercise-icon.svg';
 import StatsIcon from '../../static/weekly-stats-icon.svg';
 import FeatureCard from '../cards/FeatureCard';
 
-const FeaturesSection = () => {
+const FeaturesSection = ({ featuresRef }) => {
     const features = [
         {
             featureName: "Break reminder",
@@ -23,7 +23,7 @@ const FeaturesSection = () => {
     ];
 
     return (
-        <div className="features-section">
+        <div className="features-section" ref={ featuresRef }>
             {
                 features.map((feature, index) => (
                     <FeatureCard feature={feature} key={index} />

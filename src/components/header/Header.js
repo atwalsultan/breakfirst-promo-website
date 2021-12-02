@@ -1,6 +1,6 @@
 import Logo from '../../static/logo.svg';
 
-const Header = () => {
+const Header = ({ featuresRef, teamRef, contactRef }) => {
     return (
         <header className="site-header">
             <div>
@@ -8,9 +8,9 @@ const Header = () => {
             </div>
 
             <ul>
-                <li>Features</li>
-                <li>Team</li>
-                <li>Contact</li>
+                <li onClick={ () => featuresRef.current.scrollIntoView({ behavior: 'smooth' }) }>Features</li>
+                <li onClick={ () => teamRef.current.scrollIntoView({ behavior: 'smooth' }) }>Team</li>
+                <li onClick={ () => contactRef.current.scrollIntoView({ behavior: 'smooth' }) }>Contact</li>
             </ul>
         </header>
     )
