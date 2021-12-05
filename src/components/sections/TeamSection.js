@@ -14,20 +14,28 @@ const TeamSection = ({ teamRef }) => {
             memberImage: AmanImage,
             memberSocial: [
                 {
-                    // socialIcon: ,
-                    socialLink: ""
-                }
+                    icon: "linkedin",
+                    link: "https://www.linkedin.com/in/amandeep-walia-designer/"
+                },
+                {
+                    icon: "behance",
+                    link: "https://www.behance.net/amanwalia"
+                },
             ]
         },
         {
             memberName: "Abhishek Sharma",
-            memberRole: "Full Stack Developer",
+            memberRole: "Backend Developer / Full Stack Developer",
             memberImage: AbhishekImage,
             memberSocial: [
                 {
-                    // socialIcon: ,
-                    socialLink: ""
-                }
+                    icon: "linkedin",
+                    link: "https://www.linkedin.com/in/abhisharma-developer/"
+                },
+                {
+                    icon: "github",
+                    link: "https://github.com/abhisheksharma1123"
+                },
             ]
         },
         {
@@ -36,9 +44,13 @@ const TeamSection = ({ teamRef }) => {
             memberImage: QiImage,
             memberSocial: [
                 {
-                    // socialIcon: ,
-                    socialLink: ""
-                }
+                    icon: "linkedin",
+                    link: "https://www.linkedin.com/in/qi-cheng-designer/"
+                },
+                {
+                    icon: "behance",
+                    link: "https://qicq.design/"
+                },
             ]
         },
         {
@@ -47,19 +59,31 @@ const TeamSection = ({ teamRef }) => {
             memberImage: JasmeetImage,
             memberSocial: [
                 {
-                    // socialIcon: ,
-                    socialLink: ""
-                }
+                    icon: "linkedin",
+                    link: "https://www.linkedin.com/in/jasmeet-virdi-277b241b6/"
+                },
+                {
+                    icon: "behance",
+                    link: "https://www.behance.net/jasmeetvirdi1"
+                },
             ]
         },
         {
             memberName: "Sultan Singh Atwal",
-            memberRole: "Full Stack Developer",
+            memberRole: "Frontend Developer / Full Stack Developer",
             memberImage: SultanImage,
             memberSocial: [
                 {
-                    // socialIcon: ,
-                    socialLink: ""
+                    icon: "linkedin",
+                    link: "https://www.linkedin.com/in/sultan-atwal-developer/"
+                },
+                {
+                    icon: "github",
+                    link: "https://github.com/atwalsultan"
+                },
+                {
+                    icon: "stackoverflow",
+                    link: "https://stackoverflow.com/users/11409321/sultan-singh-atwal"
                 }
             ]
         },
@@ -69,9 +93,13 @@ const TeamSection = ({ teamRef }) => {
             memberImage: YuvrajImage,
             memberSocial: [
                 {
-                    // socialIcon: ,
-                    socialLink: ""
-                }
+                    icon: "linkedin",
+                    link: "https://www.linkedin.com/in/yuvraj-sharma-79636578/"
+                },
+                {
+                    icon: "behance",
+                    link: "https://yuv.design/"
+                },
             ]
         },
     ]

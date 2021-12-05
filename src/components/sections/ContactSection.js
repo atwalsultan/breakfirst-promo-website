@@ -7,6 +7,7 @@ const ContactSection = ({ contactRef }) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+
 		const data = { firstName, lastName, email, message };
 		fetch("http://3.98.75.199/contact", {
 			method: "POST",
@@ -14,11 +15,17 @@ const ContactSection = ({ contactRef }) => {
 			body: JSON.stringify(data),
 		})
 			.then(() => {
-				console.log("data submitted");
+				console.log("Form submitted");
 			})
 			.catch((e) => {
 				console.log(e);
 			});
+
+		// Clear form
+		setFirstName("");
+		setLastName("");
+		setEmail("");
+		setMessage("");
 	};
 
 	return (
@@ -78,9 +85,7 @@ const ContactSection = ({ contactRef }) => {
 					/>
 				</div>
 
-				<div className="button" onClick={handleSubmit}>
-					Submit
-				</div>
+				<button type="submit">Submit</button>
 			</form>
 		</div>
 	);

@@ -14,11 +14,12 @@ function App() {
   const featuresRef = useRef(null);
   const teamRef = useRef(null);
   const contactRef = useRef(null);
+  const bannerRef = useRef(null)
 
   return (
     <div className="App">
-      <Header featuresRef={ featuresRef } teamRef={ teamRef } contactRef={ contactRef } />
-      <Banner1 />
+      <Header featuresRef={ featuresRef } teamRef={ teamRef } contactRef={ contactRef } bannerRef={ bannerRef } />
+      <Banner1 featuresRef={ featuresRef } bannerRef={ bannerRef } />
       <FeaturesSection featuresRef={ featuresRef } />
       <Details />
       <FactsSection />
