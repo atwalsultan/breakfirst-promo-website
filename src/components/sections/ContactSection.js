@@ -8,24 +8,29 @@ const ContactSection = ({ contactRef }) => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		const data = { firstName, lastName, email, message };
-		fetch("http://3.98.75.199/contact", {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify(data),
-		})
-			.then(() => {
-				console.log("Form submitted");
+		if(firstName === "" || lastName === "" || email === "" || message === "") {
+			alert("Please fill out all fields before submitting");
+		}
+		else {
+			const data = { firstName, lastName, email, message };
+			fetch("http://3.98.75.199/contact", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(data),
 			})
-			.catch((e) => {
-				console.log(e);
-			});
+				.then(() => {
+					console.log("Form submitted");
+				})
+				.catch((e) => {
+					console.log(e);
+				});
 
-		// Clear form
-		setFirstName("");
-		setLastName("");
-		setEmail("");
-		setMessage("");
+			// Clear form
+			setFirstName("");
+			setLastName("");
+			setEmail("");
+			setMessage("");
+		}
 	};
 
 	return (
@@ -85,7 +90,9 @@ const ContactSection = ({ contactRef }) => {
 					/>
 				</div>
 
-				<button type="submit">Submit</button>
+				<div className="button" onClick={handleSubmit}>
+					<p>Submit</p>
+				</div>
 			</form>
 		</div>
 	);
