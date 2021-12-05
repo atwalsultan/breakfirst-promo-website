@@ -12,7 +12,7 @@ const MemberCard = ({ member }) => {
             <div  className="member-social-links">
                 {
                     member.memberSocial.map((social, index) => (
-                        <a href={social.link} target="_blank" rel="noreferrer">
+                        <a href={social.link} target="_blank" rel="noreferrer" key={index}>
                             { social.icon === "linkedin" && <FaLinkedin />}
                             { social.icon === "github" && <FaGithub />}
                             { social.icon === "stackoverflow" && <FaStackOverflow />}
