@@ -1,5 +1,5 @@
-import NewTaskImage from "../../static/newtask-1.svg";
-import LeaderboardImage from "../../static/leaderboard-1.svg";
+import NewTaskImage from "../../static/task.gif";
+import LeaderboardImage from "../../static/groups.gif";
 import LibraryImage from "../../static/library.gif";
 
 const Banner1 = () => {
