@@ -10,7 +10,7 @@ body {
 }
 
 header.site-header {
-	padding: 20px 160px;
+	padding: 20px 120px;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
@@ -20,6 +20,10 @@ header.site-header {
 	z-index: 1100;
 	background-color: #fff;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+	@media screen and (max-width: 1200px) {
+		padding: 20px 75px;
+	}
 
 	img {
 		max-height: 55px;
@@ -37,6 +41,10 @@ header.site-header {
 		gap: 100px;
 		list-style-type: none;
 
+		@media screen and (max-width: 1200px) {
+			gap: 50px;
+		}
+
 		li {
 			font-size: 27px;
 			line-height: 37px;
@@ -51,18 +59,62 @@ header.site-header {
 div.banner-1 {
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
+	padding: 32px 160px 0 160px;
+
+	@media screen and (max-width: 1425px) {
+		padding: 32px 120px 0 120px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		flex-flow: column nowrap;
+		align-items: center;
+		padding: 0 120px;
+		gap: 70px;
+	}
 
 	div {
+		flex: 1 1 0px;
+
+		@media screen and (max-width: 1200px) {
+			align-items: center;
+
+			&:first-of-type {
+				max-width: 600px;
+			}
+
+			&:nth-of-type(2) {
+				max-width: 500px;
+			}
+		}
+
+		&:nth-of-type(2) {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
 		h1 {
-			max-width: 650px;
-			padding-top: 180px;
+			padding-top: 65px;
 			font-size: 45px;
 			line-height: 63px;
 			font-weight: 600;
+
+			@media screen and (max-width: 1425px) {
+				font-size: 35px;
+				line-height: 43px;
+			}
+
+			@media screen and (max-width: 1200px) {
+				font-size: 45px;
+				line-height: 63px;
+				text-align: center;
+			}
 		}
 
 		img {
-			max-width: 650px;
+			max-width: 100%;
 			height: auto;
 		}
 
@@ -93,25 +145,53 @@ div.banner-1 {
 			&:hover {
 				cursor: pointer;
 			}
+
+			@media screen and (max-width: 1425px) {
+				font-size: 24px;
+				line-height: 32px;
+			}
+
+			@media screen and (max-width: 1200px) {
+				font-size: 27px;
+				line-height: 37px;
+				width: 250px;
+			}
 		}
 	}
 }
 
 div.feature-details-section {
+	padding: 48px 160px;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 70px;
+
+	@media screen and (max-width: 1425px) {
+		padding: 48px 120px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		gap: 0px;
+	}
+
 	div.banner-2 {
 		display: flex;
 		justify-content: center;
-		padding: 48px;
+		flex: 1 1 0px;
+
+		@media screen and (max-width: 1200px) {
+			flex-flow: column nowrap;
+			align-items: center;
+			gap: 40px;
+		}
 
 		p {
-			max-width: 525px;
 			font-size: 25px;
 			line-height: 35px;
 		}
 
 		div {
 			h2 {
-				max-width: 650px;
 				padding-top: 70px;
 				font-size: 40px;
 				line-height: 56px;
@@ -119,9 +199,18 @@ div.feature-details-section {
 				color: #355c97;
 			}
 
-			img {
+			&:first-of-type {
 				max-width: 650px;
+			}
+
+			img {
+				max-width: 100%;
 				height: auto;
+
+				@media screen and (max-width: 1200px) {
+					max-width: 500px;
+					height: auto;
+				}
 			}
 
 			&:first-of-type {
@@ -133,6 +222,12 @@ div.feature-details-section {
 
 	div.reverse {
 		flex-direction: row-reverse;
+
+		@media screen and (max-width: 1200px) {
+			flex-flow: column nowrap;
+			align-items: center;
+			gap: 40px;
+		}
 	}
 }
 
@@ -140,8 +235,19 @@ div.features-section {
 	display: flex;
 	flex-flow: row nowrap;
 	gap: 88px;
-	padding: 88px 120px;
+	padding: 88px 160px;
 	background: #142339;
+
+	@media screen and (max-width: 1425px) {
+		padding: 88px 120px;
+		gap: 44px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		flex-flow: column nowrap;
+		align-items: center;
+		gap: 88px;
+	}
 
 	.feature-card {
 		padding: 24px;
@@ -151,6 +257,10 @@ div.features-section {
 		align-items: center;
 		flex: 1;
 		border-radius: 4px;
+
+		@media screen and (max-width: 1200px) {
+			max-width: 400px;
+		}
 
 		img {
 			max-width: 80px;
@@ -169,28 +279,42 @@ div.features-section {
 
 		p {
 			font-size: 19px;
-			line-height: 27px;
+			line-height: 32px;
 			color: rgba(20, 35, 57, 0.6);
 		}
 	}
 }
 
 div.facts-section {
-	padding: 70px 120px;
+	padding: 70px 160px;
 	background: #fff6f6;
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 32px;
 
+	@media screen and (max-width: 1425px) {
+		padding: 70px 120px;
+	}
+
 	h2 {
 		font-size: 35px;
 		line-height: 56px;
+		font-weight: 600;
 	}
 
 	div.facts {
 		display: flex;
 		flex-flow: row nowrap;
 		gap: 88px;
+
+		@media screen and (max-width: 1425px) {
+			gap: 40px
+		}
+
+		@media screen and (max-width: 1200px) {
+			flex-flow: column nowrap;
+			align-items: center;
+		}
 
 		div.fact-card {
 			background: #ffffff;
@@ -200,6 +324,10 @@ div.facts-section {
 			align-items: center;
 			flex: 1;
 			border-radius: 4px;
+
+			@media screen and (max-width: 1200px) {
+				max-width: 400px;
+			}
 
 			img {
 				max-width: 65px;
@@ -217,7 +345,7 @@ div.facts-section {
 
 			p {
 				font-size: 19px;
-				line-height: 27px;
+				line-height: 32px;
 				color: #142339;
 			}
 		}
@@ -225,10 +353,14 @@ div.facts-section {
 }
 
 div.team-section {
-	padding: 70px 120px 88px 120px;
+	padding: 70px 160px 88px 160px;
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 32px;
+
+	@media screen and (max-width: 1425px) {
+		padding: 70px 120px 88px 120px;
+	}
 
 	h2 {
 		font-size: 40px;
@@ -252,8 +384,17 @@ div.team-section {
 
 		div.member-card {
 			flex-basis: 25%;
+			flex-grow: 1;
 
-			img {
+			@media screen and (max-width: 1200px) {
+				flex-basis: 40%;
+			}
+
+			@media screen and (max-width: 800px) {
+				flex-basis: 50%;
+			}
+
+			img.member-image {
 				margin-bottom: 8px;
 				background-color: #f1f3f8;
 				max-width: 100%;
@@ -269,6 +410,16 @@ div.team-section {
 				font-size: 20px;
 				line-height: 28px;
 				font-weight: 400;
+			}
+
+			img.personal-website-image {
+				height: 24px;
+				width: auto;
+				transition: 0.5s all ease-in-out;
+
+				&:hover {
+					transform: rotate(360deg);
+				}
 			}
 
 			div.member-social-links {
@@ -299,13 +450,55 @@ div.team-section {
 			}
 		}
 	}
+
+	div.last-project {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+		margin-top: 56px;
+
+		p {
+			text-align: center;
+			font-size: 30px;
+		}
+
+		button {
+			text-align: center;
+			background: #355c97;
+			max-width: 350px;
+			height: 64px;
+			border-radius: 32px;
+			transition: all 0.2s ease-in-out;
+			padding: 0 24px;
+			border: none;
+			font-size: 27px;
+			line-height: 37px;
+			color: #ffffff;
+			text-align: center;
+			font-family: inherit;
+
+			&:active {
+				transform: scale(0.9);
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 }
 
 div.contact-section {
-	padding: 0 120px;
+	padding: 0 160px;
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 32px;
+
+	@media screen and (max-width: 1425px) {
+		padding: 0 120px;
+	}
 
 	input {
 		border-radius: 4px;
@@ -347,6 +540,14 @@ div.contact-section {
 		flex-flow: column nowrap;
 		gap: 32px;
 
+		@media screen and (max-width: 1425px) {
+			padding: 40px 120px;
+		}
+
+		@media screen and (max-width: 1425px) {
+			padding: 40px 60px;
+		}
+
 		div.first-row {
 			display: flex;
 			flex-flow: row nowrap;
@@ -354,6 +555,10 @@ div.contact-section {
 
 			& > * {
 				flex-grow: 1;
+			}
+
+			@media screen and (max-width: 1000px) {
+				flex-flow: column nowrap;
 			}
 		}
 
@@ -363,16 +568,19 @@ div.contact-section {
 			gap: 8px;
 		}
 
-		div.button {
+		button {
 			background: #355c97;
 			max-width: 248px;
 			height: 64px;
 			border-radius: 32px;
 			transition: all 0.2s ease-in-out;
 			padding: 0;
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: center;
+			border: none;
+			font-size: 27px;
+			line-height: 37px;
+			color: #ffffff;
+			text-align: center;
+			font-family: inherit;
 
 			&:active {
 				transform: scale(0.9);
@@ -380,12 +588,6 @@ div.contact-section {
 
 			&:hover {
 				cursor: pointer;
-			}
-			p {
-				font-size: 27px;
-				line-height: 37px;
-				color: #ffffff;
-				text-align: center;
 			}
 		}
 	}

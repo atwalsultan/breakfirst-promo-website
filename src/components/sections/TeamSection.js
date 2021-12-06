@@ -40,7 +40,7 @@ const TeamSection = ({ teamRef }) => {
         },
         {
             memberName: "Qi Cheng",
-            memberRole: "User Interface / Exprerience Designer",
+            memberRole: "Project Manager & UI / UX Designer",
             memberImage: QiImage,
             memberSocial: [
                 {
@@ -48,7 +48,7 @@ const TeamSection = ({ teamRef }) => {
                     link: "https://www.linkedin.com/in/qi-cheng-designer/"
                 },
                 {
-                    icon: "behance",
+                    icon: "personal",
                     link: "https://qicq.design/"
                 },
             ]
@@ -97,7 +97,7 @@ const TeamSection = ({ teamRef }) => {
                     link: "https://www.linkedin.com/in/yuvraj-sharma-79636578/"
                 },
                 {
-                    icon: "behance",
+                    icon: "personal",
                     link: "https://yuv.design/"
                 },
             ]
@@ -115,6 +115,13 @@ const TeamSection = ({ teamRef }) => {
                         <MemberCard member={member} key={index} />
                     ))
                 }
+            </div>
+
+            <div className="last-project">
+                <p>More by the team:</p>
+                <a href="https://www.fuelture.ca/" target="_blank" rel="noreferrer" >
+                    <button>Project Fuelture</button>
+                </a>
             </div>
         </div>
     )
