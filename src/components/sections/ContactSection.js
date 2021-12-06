@@ -8,29 +8,24 @@ const ContactSection = ({ contactRef }) => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		if(firstName === "" || lastName === "" || email === "" || message === "") {
-			alert("Please fill out all fields before submitting");
-		}
-		else {
-			const data = { firstName, lastName, email, message };
-			fetch("http://3.98.75.199/contact", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify(data),
+		const data = { firstName, lastName, email, message };
+		fetch("https://sultan-email.herokuapp.com/breakfirst", {
+			method: "POST",
+			headers: { "content-type": "application/json" },
+			body: JSON.stringify(data),
+		})
+			.then(() => {
+				console.log("Form submitted");
 			})
-				.then(() => {
-					console.log("Form submitted");
-				})
-				.catch((e) => {
-					console.log(e);
-				});
+			.catch((e) => {
+				console.log(e);
+			});
 
-			// Clear form
-			setFirstName("");
-			setLastName("");
-			setEmail("");
-			setMessage("");
-		}
+		// Clear form
+		setFirstName("");
+		setLastName("");
+		setEmail("");
+		setMessage("");
 	};
 
 	return (
@@ -90,9 +85,7 @@ const ContactSection = ({ contactRef }) => {
 					/>
 				</div>
 
-				<div className="button" onClick={handleSubmit}>
-					<p>Submit</p>
-				</div>
+				<button type="submit">Submit</button>
 			</form>
 		</div>
 	);
