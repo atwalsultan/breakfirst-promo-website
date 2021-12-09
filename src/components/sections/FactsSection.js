@@ -7,7 +7,7 @@ const FactsSection = () => {
     const facts = [
         {
             factHeading: "Cause of Mortality",
-            factDescription: "Sedentary lifestyles increase all causes of mortality, while moving just 2 minutes every hour can decrease the risk by up to 33%.",
+            factDescription: "A sedentary lifestyle increases all causes of mortality, while moving just 2 minutes every hour can decrease the risk by up to 33%.",
             factIcon: AlertIcon
         },
         {
@@ -17,7 +17,7 @@ const FactsSection = () => {
         },
         {
             factHeading: "Mental Impact",
-            factDescription: "A sedentary lifestyle have a negative impact on mental well-being. Its combination with the physical impact to health makes sedentary lifestyle problematic.",
+            factDescription: "A sedentary lifestyle has a negative impact on mental well-being. Its combination with the physical impact to health makes a sedentary lifestyle problematic.",
             factIcon: DementiaIcon
         }
     ]
