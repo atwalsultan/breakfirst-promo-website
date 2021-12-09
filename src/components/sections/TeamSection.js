@@ -25,7 +25,7 @@ const TeamSection = ({ teamRef }) => {
         },
         {
             memberName: "Abhishek Sharma",
-            memberRole: "Backend Developer / Full Stack Developer",
+            memberRole: "Backend / Full Stack Developer",
             memberImage: AbhishekImage,
             memberSocial: [
                 {
@@ -70,7 +70,7 @@ const TeamSection = ({ teamRef }) => {
         },
         {
             memberName: "Sultan Singh Atwal",
-            memberRole: "Frontend Developer / Full Stack Developer",
+            memberRole: "Frontend / Full Stack Developer",
             memberImage: SultanImage,
             memberSocial: [
                 {
