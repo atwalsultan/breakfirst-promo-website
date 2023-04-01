@@ -67,7 +67,7 @@ header.site-header {
 	@media screen and (max-width: 1200px) {
 		padding: 20px 75px;
 	}
-	
+
 	@media screen and (max-width: 850px) {
 		padding: 20px 56px;
 	}
@@ -76,8 +76,8 @@ header.site-header {
 		padding: 20px 28px;
 	}
 
-
-	& > img.hamburger-icon, img.close-icon {
+	& > img.hamburger-icon,
+	img.close-icon {
 		display: none;
 
 		@media screen and (max-width: 850px) {
@@ -95,7 +95,7 @@ header.site-header {
 
 		@media screen and (max-width: 600px) {
 			max-height: 40px;
-		}		
+		}
 
 		&:hover {
 			cursor: pointer;
@@ -401,7 +401,7 @@ div.facts-section {
 		gap: 88px;
 
 		@media screen and (max-width: 1425px) {
-			gap: 40px
+			gap: 40px;
 		}
 
 		@media screen and (max-width: 1200px) {
@@ -492,10 +492,11 @@ div.team-section {
 				flex-basis: 50%;
 			}
 
-			img.member-image {
+			div.member-image {
 				margin-bottom: 8px;
 				background-color: #f1f3f8;
 				max-width: 100%;
+				height: 300px;
 			}
 
 			h3 {
@@ -527,8 +528,7 @@ div.team-section {
 				margin-top: 8px;
 
 				a {
-					color: #F1F3F8
-					;
+					color: #f1f3f8;
 					transition: 0.1s all ease-in-out;
 
 					&:active {
